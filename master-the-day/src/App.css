@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  color: #fff; }
+
+#root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  z-index: -2; }
+  #root::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1; }
+
+.App {
+  padding: 40px; }
+
+.row {
+  display: block;
+  /*  width: 100%;*/ }
+
+.form-element {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 0 0 10px;
+  position: relative;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px; }
+
+input, select {
+  border: none;
+  border-radius: 4px;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #fff;
+  color: #666666;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin: 10px 10px 10px 0;
+  width: 100px;
+  font-size: 18px; }
+
+.form-title input {
+  min-width: 410px; }
+
+.form-date input {
+  min-width: 120px; }
+
+.form-time input, .form-time select {
+  max-width: 80px; }
+
+label {
+  position: absolute;
+  top: 2px;
+  text-transform: uppercase;
+  font-size: 14px; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
