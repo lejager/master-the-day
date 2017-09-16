@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
+import Recurring from './Recurring';
 
 class HabitForm extends Component {
   constructor(props) {
@@ -80,6 +81,7 @@ class HabitForm extends Component {
           <div className="form-element">
             <label>Repeat...</label>
             <input ref={(value) => this.recurring = value} type="checkbox" checked={this.state.recurring} onChange={this.handleRecurring}/>
+            <Recurring recurring={this.state.recurring} />
             <select ref="repeat">
               <option ref="daily">Daily</option>
               <option ref="weekly">Weekly</option>
